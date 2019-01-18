@@ -15,6 +15,7 @@ class Dog
     @name
   end
 
+  def 
   def self.all
     #@@all.each {|dog| puts "#{dog.instance_variable_get(:@name)}"}
     @@all.each {|dog| puts "#{dog.name}"}
