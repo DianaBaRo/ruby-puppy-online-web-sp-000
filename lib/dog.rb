@@ -1,5 +1,5 @@
 class Dog
- attr_accessor :name
+  attr_accessor :name
   @@all = []
 
   def initialize(name)
@@ -7,8 +7,10 @@ class Dog
     @@all << self
   end
 
+  
   def self.all
-    @@all.each {|dog| puts "#{dog.instance_variable_get(:@name)}"}
+    #@@all.each {|dog| puts "#{dog.instance_variable_get(:@name)}"}
+    @@all.each {|dog| puts "#{dog.name}"}
   end
 
   def self.clear_all
